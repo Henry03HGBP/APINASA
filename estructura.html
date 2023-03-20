@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Open APIS</title>
+    <link rel="icon" href="/Módulo4/Dia3/APINASA/images/NASA_logo.png">
+</head>
+<body>
+ <main>
+    <article>
+        <div>
+         <button></button>   
+        </div>
+        <div>
+         <input id="fecha" type="date" onchange="cambiarImagen()">
+        </div>
+        <div>
+           <button></button> 
+        </div>
+    </article>
+    <article>
+        <div id="imagen" style="width: 100%; height: 400px;"></div>
+        <section>
+            <h2 id="titulo"></h2>
+            <p id="texto"></p>
+        </section>
+    </article>
+    <article>
+        <h2>Asteroides</h2>
+        <label>Fecha de inicio</label>
+        <input id="fechaInicioAsteroides" type="date">
+        <label>Fecha de Fin</label>
+        <input id="fechaFinAsteroides" type="date">
+        <button onclick="conssultarAsteroides()">Consultar</button>
+        <table>
+            <thead>
+                <tr>
+                  <th>Nombre</th> 
+                  <th>Fecha</th>
+                  <th>Velocidad</th>
+                  <th>Laboratorio</th> 
+                </tr>
+            </thead>
+            <thbody id="infoTabla">
+                Esperando Request...
+            </thbody>
+        </table>
+    </article>
+ </main>
+ <script src="api-nasa.js"></script>
+</body>
+</html>
